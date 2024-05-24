@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <h1>Formulario</h1>
+    <main>
+        <form action="alta.php" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" autocomplete="on" required> 
+          
+            <label for="lastname">Apellido:</label>
+            <input type="text" id="lastname" name="lastname" required>
+
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" autocomplete="on" required> 
+          
+            <label for="born">Fecha De Nacimineto:</label>
+            <input type="date" id="born" name="born" required>
+
+            <label for="phone">Telefono:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" autocomplete="on" required> 
+          
+            <label for="genero">Genero:</label>
+            <input type="radio" id="genero" name="genero" required>M
+            <input type="radio" id="genero" name="genero" required>F
+            <input type="radio" id="genero" name="genero" required>Otro
+            <input type="radio" id="genero" name="genero" required>Prefiero No Decir
+
+            <label for="country">Pais:</label>
+            <input list="country">
+            <datalist id="country">
+                <option value="Argentina"></option>
+                <option value="Bolivia"></option>
+                <option value="Brasil"></option>
+                <option value="Chile"></option>
+                <option value="Colombia"></option>
+                <option value="Ecuador"></option>
+                <option value="Paraguay"></option>
+                <option value="Peru"></option>
+                <option value="Uruguay"></option>
+                <option value="Venezuela"></option>
+            </datalist>
+            <input type="submit" value="Registrarse">
+        </form>          
+    </main>
+    <footer></footer>
+</body>
+
+</html>
