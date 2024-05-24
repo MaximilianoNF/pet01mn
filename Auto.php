@@ -2,7 +2,7 @@
 
 require_once 'Conexion.php';
 
-class Auto
+class Persona
 {
     //Promocion de propiedades del constructor
     public function __construct(
